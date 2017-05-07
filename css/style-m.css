@@ -25,7 +25,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 600px;
     background-position: center center; 
 }
 
@@ -146,14 +146,35 @@ p {
 }
 
 .about-image {
-    background-size: contain;
-    background-image: url('../images/about-image.jpg');
-    height: 400px;
+    background-size: cover;
+    background-image: url('../images/men.jpg');
+    height: 600px;
     background-repeat: no-repeat;
+    background-position: 50% 20%;
+    margin-bottom: 30px;
 }
 
 .drinks-background {
     background-size: contain;
     background-image: url('../images/cocktail-2.jpg');
     height: 400px;
+    margin-bottom: 30px;
+}
+
+.agave-container {
+    background-size: cover;
+    background-image: url('../images/agave.jpg');
+    height: 600px;
+    background-position: 50% 50%;
+
+}
+
+.contact {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .about-image {
+        height: 400px;
+    }
 }
