@@ -4,7 +4,6 @@ body {
 }
 
 .navbar-nav {
-    float: right;
 }
 
 .home-wrapper {
@@ -23,9 +22,11 @@ body {
 .background-image {
     background-size: contain;
     background-image: url('../images/background.jpg');
-    height: 500px;
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    height: 400px;
+    background-position: center center; 
 }
 
 
@@ -42,9 +43,15 @@ h2 {
 }
 
 .logo-container img {
-    margin-left: 10px;
-    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; 
 }
+
+/*.logo-container {
+    width: 200px;
+}*/
 
 .title {
     text-align: center;
@@ -59,6 +66,9 @@ h2 {
     font-weight: 200;
 }
 
+#right-nav {
+    float: right;   
+}
 .find-out-more {
     text-align: center;
 }
@@ -79,9 +89,6 @@ p {
     font-size: 18px;
 }
 
-#contact {
-    background: #F5CC00;
-}
 
 .img-container {
     width: 100%;
@@ -132,4 +139,21 @@ p {
 
 .cocktail-link {
     text-align: center;
+}
+
+.contact {
+    font-size: 27px;
+}
+
+.about-image {
+    background-size: contain;
+    background-image: url('../images/about-image.jpg');
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.drinks-background {
+    background-size: contain;
+    background-image: url('../images/cocktail-2.jpg');
+    height: 400px;
 }
