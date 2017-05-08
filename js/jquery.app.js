@@ -117,7 +117,7 @@ function($) {
             var $anchor = $(event.target);
             if ($($anchor.attr('href')).length > 0 && $anchor.is('a.nav-link')) {
                 $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top - 0
+                    scrollTop: $($anchor.attr('href')).offset().top -150
                 }, 1500, 'easeInOutExpo');
                 event.preventDefault();    
             }
